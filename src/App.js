@@ -23,7 +23,6 @@ function App() {
       const response = await axios.get(
         `https://restcountries.com/v3.1/name/${country}`
       );
-      // deneme
       const responseData = response.data[0];
       setOfficialName(responseData.name.official);
       setCommonName(responseData.name.common);
